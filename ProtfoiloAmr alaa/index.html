@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!--==================== FAVICONS =====================-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+    <!--==================== REMIXICONS =====================-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--==================== CSS =====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Force Dark Theme (no toggle) -->
+    <script>
+      // add dark class ASAP (prevents flash)
+      document.documentElement.classList.add("dark-theme");
+    </script>
+
+    <style>
+      /* Hide theme toggle button if exists */
+      #theme-button {
+        display: none !important;
+      }
+    </style>
+
+    <title>Amr Alaa Eddin | Front-End Developer</title>
+  </head>
+
+  <body>
+    <!--==================== HEADER =====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-circle">AA</span>
+          <span class="nav__logo-name">Alaa Eddin</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
+
+          <h3 class="nav__name">Amr</h3>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#works" class="nav__link">Experience</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme button (hidden by CSS above) -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN =====================-->
+    <main class="main">
+      <!--==================== HOME =================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <h1 class="home__name">
+            Hi I'am
+            <span style="color: hsla(47, 88%, 32%, 0.687)">Amr Alaa Eddin</span>
+          </h1>
+
+          <div class="home__perfil">
+            <div class="home__image">
+              <img src="assets/img/amr.jpg" alt="image" class="home__img" />
+              <div class="home__shadow"></div>
+
+              <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow" />
+              <img src="assets/img/random-lines.svg" alt="" class="home__line" />
+
+              <div class="geometric-box"></div>
+            </div>
+
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/amr_alaaeddin?igsh=aXAycHpyZzhrMzlp"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/amr.alaedin"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-box-line"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/amr-alaa-eddin"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+
+              <a href="mailto:amralaedin@gmail.com" class="home__social-link">
+                <i class="ri-mail-line"></i>
+              </a>
+
+              <a href="tel:+963997118690" class="home__social-link">
+                <i class="ri-phone-line"></i>
+              </a>
+
+              <a href="https://wa.me/963997118690" target="_blank" class="home__social-link">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__info">
+            <p class="home__description">
+              <b>Front-End Developer</b> focused on building fast, responsive, and modern web
+              interfaces. I create clean UI, smooth interactions, and reusable components with
+              strong attention to details.
+            </p>
+
+            <div style="text-align: center">
+              <a href="assets/img/cv/AmrAlaaEddin-CV.pdf" class="download-button">Download CV</a>
+            </div>
+
+            <a href="#about" class="home__scroll" style="margin-left: 14%">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <span class="home__scroll-text">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT =================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span> About me .</span>
+          </h2>
+
+          <div class="about__perfil">
+            <div class="about__image">
+              <img src="assets/img/amr2.jpg" alt="image" class="about__img" />
+
+              <div class="about__shadow"></div>
+
+              <div class="geometric-box"></div>
+              <img src="assets/img/random-lines.svg" alt="" class="about__line" />
+              <div class="about__box"></div>
+            </div>
+          </div>
+
+          <div class="about__info">
+            <p class="about__description">
+              My name is <b>Amr Alaa Eddin</b>. I’m a <b>Front-End Developer</b> specialized in
+              building responsive websites and web apps. I focus on performance, clean code,
+              and great user experience.
+            </p>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <b>
+                  <i class="ri-arrow-right-s-line" style="color: hsla(47, 88%, 32%, 0.687)"></i>
+                  Phone:
+                </b>
+                +963 997 118 690
+              </li>
+              <li class="about__item">
+                <b>
+                  <i class="ri-arrow-right-s-line" style="color: hsla(47, 88%, 32%, 0.687)"></i>
+                  Email:
+                </b>
+                amralaedin@gmail.com
+              </li>
+            </ul>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <b>
+                  <i class="ri-arrow-right-s-line" style="color: hsla(47, 88%, 32%, 0.687)"></i>
+                  Location:
+                </b>
+                Syria
+              </li>
+              <li class="about__item">
+                <b>
+                  <i class="ri-arrow-right-s-line" style="color: hsla(47, 88%, 32%, 0.687)"></i>
+                  Availability:
+                </b>
+                Freelance / Full-time
+              </li>
+            </ul>
+
+            <div class="about__buttons">
+              <a href="#contact" class="button">
+                <i class="ri-send-plane-line"> Contact Me</i>
+              </a>
+
+              <a href="mailto:amralaedin@gmail.com" class="button__ghost">
+                <i class="ri-mail-line"></i>
+              </a>
+
+              <a href="tel:+963997118690" class="button__ghost">
+                <i class="ri-phone-line"></i>
+              </a>
+
+              <a href="https://wa.me/963997118690" target="_blank" class="button__ghost">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/amr-alaa-eddin"
+                target="_blank"
+                class="button__ghost"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES =================-->
+      <section class="services section" id="services">
+        <h2 class="section__title-2">
+          <span>Services.</span>
+        </h2>
+
+        <div class="services__container container grid">
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-layout-4-line"></i>
+              </div>
+
+              <h2 class="services__title">UI Implementation</h2>
+
+              <p class="services__description">
+                Pixel-perfect pages from Figma/Adobe XD with responsive layouts and clean HTML/CSS.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-code-box-line"></i>
+              </div>
+
+              <h2 class="services__title">Front-End Development</h2>
+
+              <p class="services__description">
+                Modern web apps with reusable components, smooth interactions, and good performance.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-smartphone-line"></i>
+              </div>
+
+              <h2 class="services__title">Responsive Design</h2>
+
+              <p class="services__description">
+                Mobile-first design that works perfectly on phones, tablets, and desktops.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== SKILLS =================-->
+      <section class="services section" id="skills">
+        <h2 class="section__title-2">
+          <span>Skills.</span>
+        </h2>
+
+        <div class="services__container container grid">
+          <article class="services__card">
+            <div
+              class="services__content"
+              style="
+                height: 90%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 20px;
+              "
+            >
+              <div class="services__icon" style="margin-top: auto">
+                <img
+                  src="assets/img/skills/html.png"
+                  alt="HTML"
+                  class="services__img"
+                  style="transform: scale(0.5); margin-top: auto"
+                />
+              </div>
+              <div class="services__box"></div>
+              <h2 class="services__title" style="margin-top: auto">HTML</h2>
+              <p class="services__description" style="margin-top: 0; display: flex; align-items: center">
+                Build semantic, accessible page structure.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div
+              class="services__content"
+              style="
+                height: 90%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 0px;
+              "
+            >
+              <div class="services__icon" style="margin-top: auto">
+                <img
+                  src="assets/img/skills/css.png"
+                  alt="CSS"
+                  class="services__img"
+                  style="transform: scale(0.5); margin-top: auto"
+                />
+              </div>
+              <div class="services__box"></div>
+              <h2 class="services__title" style="margin-top: auto">CSS</h2>
+              <p class="services__description" style="margin-top: 0; display: flex; align-items: center">
+                Responsive layout, animations, and modern UI.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div
+              class="services__content"
+              style="
+                height: 90%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 20px;
+              "
+            >
+              <div class="services__icon">
+                <img
+                  src="assets/img/skills/js.png"
+                  alt="JavaScript"
+                  class="services__img"
+                  style="transform: scale(0.45); margin-top: auto"
+                />
+              </div>
+              <div class="services__box"></div>
+              <h2 class="services__title">JavaScript</h2>
+              <p class="services__description">Interactive UI, DOM, and modern ES features.</p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div
+              class="services__content"
+              style="
+                height: 90%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 20px;
+              "
+            >
+              <div class="services__icon" style="margin-top: auto">
+                <img
+                  src="assets/img/skills/react.png"
+                  alt="React"
+                  class="services__img"
+                  style="transform: scale(0.5); margin-top: auto"
+                />
+              </div>
+              <div class="services__box"></div>
+              <h2 class="services__title" style="margin-top: auto">React</h2>
+              <p class="services__description" style="margin-top: 0; display: flex; align-items: center">
+                Component-based UI and state management.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div
+              class="services__content"
+              style="
+                height: 90%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 0px;
+              "
+            >
+              <div class="services__icon" style="margin-top: auto">
+                <img
+                  src="assets/img/skills/github.png"
+                  alt="GitHub"
+                  class="services__img"
+                  style="transform: scale(0.5); margin-top: auto"
+                />
+              </div>
+              <div class="services__box"></div>
+              <h2 class="services__title" style="margin-top: auto">GitHub</h2>
+              <p class="services__description" style="margin-top: 0; display: flex; align-items: center">
+                Collaboration, version control, and code reviews.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div
+              class="services__content"
+              style="
+                height: 90%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 20px;
+              "
+            >
+              <div class="services__icon" style="margin-top: auto">
+                <img
+                  src="assets/img/skills/figma.png"
+                  alt="Figma"
+                  class="services__img"
+                  style="transform: scale(0.45); margin-top: auto"
+                />
+              </div>
+              <div class="services__box"></div>
+              <h2 class="services__title" style="margin-top: auto">Figma</h2>
+              <p class="services__description" style="margin-top: 0; display: flex; align-items: center">
+                Turn designs into clean responsive UI.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== EXPERIENCE =================-->
+      <section class="projects section" id="works">
+        <h2 class="section__title-1">
+          <span>Experience.</span>
+        </h2>
+
+        <p class="home__description"><b>Front-End Developer (Freelance):</b></p>
+        <li class="about__item" style="margin-bottom: 2%; text-align: center">
+          Built responsive landing pages and business websites from Figma designs using HTML, CSS, and JavaScript.
+        </li>
+        <li class="about__item" style="margin-bottom: 2%; text-align: center">
+          Developed reusable UI components and improved performance and accessibility.
+        </li>
+        <li class="about__item" style="margin-bottom: 8%; text-align: center">
+          Integrated APIs and added interactive features (forms, animations, filtering, pagination).
+        </li>
+
+        <p class="home__description"><b>UI / Web Projects (Personal & Training):</b></p>
+        <li class="about__item" style="margin-bottom: 2%; text-align: center">
+          Created modern portfolio templates and small web apps to practice real-world UI patterns.
+        </li>
+        <li class="about__item" style="margin-bottom: 8%; text-align: center">
+          Focused on clean code, responsive layout, and consistent design system.
+        </li>
+      </section>
+
+      <!--==================== PROJECTS =================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Projects.</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <!-- Project 1 -->
+          <article class="projects__card">
+            <div class="projects__image" style="position: relative">
+              <img src="assets/img/projects/ecommerce.png" alt="image" class="projects__img" />
+              <a
+                href="#"
+                class="projects__button button"
+                style="position: absolute; top: 155px; right: 10px; transform: scale(1.3)"
+              >
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Pioneer clinic reservation</h3>
+              <h2 class="projects__title">PioneerClinic App</h2>
+
+              <p class="projects__description">
+                Revolutionizing healthcare in Damascus, our app facilitates seamless reservation and booking of appointments
+                with doctors at Pioneer Clinic in Al3fef. Utilizing Firebase for real-time chat functionality and state
+                management with Cubit in Flutter, users can easily schedule appointments, engage in consultations, and
+                receive notifications powered by FCM Firebase.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a href="#" target="_blank" class="projects__link">
+                <i class="ri-github-line"></i> View
+              </a>
+              <a href="#" target="_blank" class="projects__link">
+                <i class="ri-globe-line"></i> Live
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="projects__card">
+            <div class="projects__image" style="position: relative">
+              <img src="assets/img/projects/dashboard.png" alt="image" class="projects__img" />
+              <a
+                href="#"
+                class="projects__button button"
+                style="position: absolute; top: 155px; right: 10px; transform: scale(1.3)"
+              >
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Delivary app</h3>
+              <h2 class="projects__title">Wasena - وصينا</h2>
+
+              <p class="projects__description">
+                Bringing convenience to the Damascus countryside, Wasena ensures swift and reliable delivery services.
+                Seamlessly order, track, and receive your packages with ease, catering to both residents and businesses alike.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a href="#" target="_blank" class="projects__link">
+                <i class="ri-github-line"></i> View
+              </a>
+              <a href="#" target="_blank" class="projects__link">
+                <i class="ri-globe-line"></i> Live
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="projects__card">
+            <div class="projects__image" style="position: relative">
+              <img src="assets/img/projects/portfolio.png" alt="image" class="projects__img" />
+              <a
+                href="#"
+                class="projects__button button"
+                style="position: absolute; top: 155px; right: 10px; transform: scale(1.3)"
+              >
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Workshop UI app</h3>
+              <h2 class="projects__title">FlutterDevo</h2>
+
+              <p class="projects__description">
+                Converse effortlessly with FlutterDevo, enjoying natural interactions, smart responses, and instant engagement.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a href="#" target="_blank" class="projects__link">
+                <i class="ri-github-line"></i> View
+              </a>
+              <a href="#" target="_blank" class="projects__link">
+                <i class="ri-globe-line"></i> Live
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT =====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Contact Me.</span>
+            </h2>
+
+            <p class="contact__description-1">Send me any messages you want and I'll get back to you.</p>
+
+            <p class="contact__description-1">Contact me for inquiries, collaborations, or job opportunities.</p>
+
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="contact__mail">
+            <h2 class="contact__title">Reach me directly</h2>
+
+            <div style="display: grid; gap: 12px">
+              <a class="button" href="mailto:amralaedin@gmail.com">
+                <i class="ri-mail-line"></i> Email: amralaedin@gmail.com
+              </a>
+
+              <a class="button" href="tel:+963997118690">
+                <i class="ri-phone-line"></i> Call: +963 997 118 690
+              </a>
+
+              <a class="button__ghost" target="_blank" href="https://wa.me/963997118690">
+                <i class="ri-whatsapp-line"></i> WhatsApp
+              </a>
+
+              <a class="button__ghost" target="_blank" href="https://www.linkedin.com/in/amr-alaa-eddin">
+                <i class="ri-linkedin-box-line"></i> LinkedIn
+              </a>
+
+              <a class="button__ghost" target="_blank" href="https://www.facebook.com/amr.alaedin">
+                <i class="ri-facebook-circle-line"></i> Facebook
+              </a>
+
+              <a
+                class="button__ghost"
+                target="_blank"
+                href="https://www.instagram.com/amr_alaaeddin?igsh=aXAycHpyZzhrMzlp"
+              >
+                <i class="ri-instagram-line"></i> Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow" />
+
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">Quick Links</p>
+                <p class="contact__social-description-2">Find me here</p>
+              </div>
+
+              <div class="contact__social-links">
+                <a href="https://www.facebook.com/amr.alaedin" target="_blank" class="contact__social-link">
+                  <i class="ri-facebook-circle-line"></i>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/amr_alaaeddin?igsh=aXAycHpyZzhrMzlp"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/amr-alaa-eddin" target="_blank" class="contact__social-link">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+
+                <a href="mailto:amralaedin@gmail.com" class="contact__social-link">
+                  <i class="ri-mail-line"></i>
+                </a>
+
+                <a href="tel:+963997118690" class="contact__social-link">
+                  <i class="ri-phone-line"></i>
+                </a>
+
+                <a href="https://wa.me/963997118690" target="_blank" class="contact__social-link">
+                  <i class="ri-whatsapp-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER =====================-->
+    <footer class="footer" style="padding-right: 12%">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li><a href="#about" class="footer__link">About Me</a></li>
+          <li><a href="#services" class="footer__link">Services</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+          <li><a href="#works" class="footer__link">Experience</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By
+          <a href="#">Amr Alaa Eddin</a>
+        </span>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL UP =====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <!--==================== SCROLLREVAL =====================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--==================== EMAIL JS =====================-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--==================== MAIN JS =====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Disable theme toggle logic if exists in main.js -->
+    <script>
+      // If main.js toggles theme, this forces dark again after load.
+      window.addEventListener("load", function () {
+        document.documentElement.classList.add("dark-theme");
+        document.body.classList.add("dark-theme");
+      });
+    </script>
+  </body>
+</html>
